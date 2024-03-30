@@ -5,27 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cded54f3-001c-47d1-ab5a-9e294a879ae0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/data/SKU1234.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/books/EditBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/books/LMSController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/library.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/listview.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/main-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/controllers/AddBookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/controllers/AddUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/controllers/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/entity/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/entity/CheckBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/entity/MenuItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/entity/UserType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/ComponentUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/DataUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/DataUtilFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/EntityDataResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/ScreenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/Styling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/TextFieldUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/ToolTipUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/css/adminPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/css/mainPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/css/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/fxml/Admin/addBooks.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/fxml/Admin/addUsers.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/fxml/Admin/adminPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/fxml/mainPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/fxml/prompt.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/images/Library.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/data/SKU1234.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/books/EditBook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/northeastern/lms/books/LMSController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/library.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/listview.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/main-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +54,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="CSS File" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,9 +75,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2eB24ZAKgVquEKjkMYpF8BmH4NL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -70,6 +91,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
+    "kotlin.migration.detection.enabled": "false",
+    "last_opened_file_path": "/Users/abc/IntelliJ_Projects/LibraryManagementSystem/src/main/resources/edu/northeastern/lms/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -79,6 +102,21 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/fxml/Admin" />
+      <recent name="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/fxml" />
+      <recent name="$PROJECT_DIR$/src/main/resources/edu/northeastern/lms/css" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.northeastern.lms.entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.northeastern.lms.controllers" />
+      <recent name="edu.northeastern.lms.utility" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.northeastern.lms.MainApplication" />
@@ -108,6 +146,10 @@
       <option name="presentableId" value="Default" />
       <updated>1711363459706</updated>
       <workItem from="1711363460807" duration="10638000" />
+      <workItem from="1711413977046" duration="13563000" />
+      <workItem from="1711530092960" duration="398000" />
+      <workItem from="1711530512822" duration="47611000" />
+      <workItem from="1711746237097" duration="15910000" />
     </task>
     <servers />
   </component>
@@ -162,5 +204,56 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/northeastern/lms/controllers/LoginController.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/ScreenUtil.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/ScreenUtil.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/northeastern/lms/controllers/LoginController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/northeastern/lms/controllers/LoginController.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/northeastern/lms/controllers/LoginController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/northeastern/lms/controllers/LoginController.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/northeastern/lms/utility/ComponentUtil.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/northeastern/lms/controllers/AddUserController.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

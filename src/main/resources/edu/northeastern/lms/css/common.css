@@ -1,0 +1,97 @@
+.root, .field-vbox, .borrowed-box {
+    -fx-background-color:  #c9e7f2;
+}
+
+.function-button {
+    -fx-background-color: #8aaed1;
+    -fx-font-family: "JetBrains Mono Medium";
+    -fx-font-size: 1.2em;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.function-button:hover {
+    -fx-background-color: #f4a261;
+}
+
+.function-button:pressed {
+    -fx-background-color: #e76f51;
+    -fx-text-fill: white;
+}
+
+.nav-bar {
+    -fx-background-color: #133954;
+}
+
+.nav-bar-title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #c9e7f2;
+    -fx-padding: 10px;
+}
+
+.left-pane {
+    -fx-background-color: #c4af98;
+}
+
+.right-pane {
+    -fx-background-color: #83C5BE;
+}
+
+.input-label {
+    -fx-font-size: 20;
+    -fx-text-fill: #2b2424;
+    -fx-padding: 10px;
+}
+
+.field-vbox {
+    -fx-border-width: none;
+}
+
+.text-field, .choice-box .text-field {
+    -fx-background-color: #f7fbfc;
+}
+
+.text-field, .choice-box {
+    -fx-font-size: 15px;
+    -fx-font-family: "JetBrains Mono Medium";
+    -fx-font-weight: bold;
+}
+
+.choice-box, .choice-box .context-menu {
+    -fx-background-color: #f7fbfc;
+    -fx-text-fill: black;
+}
+
+.choice-box .context-menu:hover {
+    -fx-cursor: hand;
+}
+
+.choice-box:hover {
+    -fx-cursor: hand;
+}
+
+.date-picker, .date-picker .text-field, .date-picker .context-menu {
+    -fx-font-size: 15px;
+    -fx-font-family: "JetBrains Mono Medium";
+    -fx-font-weight: bold;
+    -fx-background-color: #F0D68A;
+    -fx-text-fill: black;
+}
+
+.separate-window-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.function-buttons-hBox {
+    -fx-background-color: #c9e7f2;
+    -fx-border-width: none;
+    -fx-border-color: transparent;
+}
+
+.start-info {
+    -fx-font-family: "JetBrains Mono Medium";
+    -fx-font-weight: bold;
+}

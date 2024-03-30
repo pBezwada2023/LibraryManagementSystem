@@ -1,0 +1,103 @@
+.table-view {
+    -fx-font-family: "JetBrains Mono Medium";
+    -fx-background-color: #c9e7f2;
+    -fx-border-color: transparent;
+    -fx-border-width: none;
+    -fx-font-size: 15px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header .label,
+.table-view .column-header-background .filler {
+    -fx-font-family: "JetBrains Mono Medium";
+    -fx-background-color: #133954;
+    -fx-border-color: #c9e7f2;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+
+.table-view .table-cell {
+    -fx-border-color: #2b2424;
+    -fx-font-size: 17px;
+    -fx-padding: 2px 0px 2px 10px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #0ca1a6;
+    -fx-background-insets: 0px, 0px 0px 1px 0px;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #5accd9;
+    -fx-background-insets: 0px, 0px 0px 1px 0px;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:hover {
+    -fx-cursor: hand;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-background-color: white;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2px;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #EFD589, #9a8b5f);
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #EFD589, #9a8b5f);
+}
+
+.table-row-cell:selected {
+    -fx-font-family: "JetBrains Mono Medium";
+    -fx-text-background-color: #EFD589;
+    -fx-background-color: #006d77;
+    -fx-background-radius: 10px;
+    -fx-border-color: #EFD589;
+    -fx-border-radius: 10px;
+    -fx-font-weight: bold;
+}
+
+.refresh-table {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #83C5BE;
+    -fx-font-weight: bold;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+.refresh-table:hover {
+    -fx-background-color: #7C80E5;
+    -fx-text-fill: white;
+
+    -webkit-transition: background-color 1s linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1s linear;
+}
+
+.refresh-table:pressed {
+    -fx-background-color: #4E53B7;
+}
+

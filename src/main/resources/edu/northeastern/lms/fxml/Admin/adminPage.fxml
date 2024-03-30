@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="690.0" prefWidth="1200.0" snapToPixel="false" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.northeastern.lms.controllers.AdminController">
+     <top>
+         <HBox alignment="CENTER_LEFT" focusTraversable="true" prefHeight="61.0" styleClass="topBox" stylesheets="@../../css/adminPage.css" BorderPane.alignment="CENTER_LEFT">
+             <padding>
+                 <Insets left="20.0" />
+             </padding>
+             <Label styleClass="app-name" stylesheets="@../../css/adminPage.css" text="Library Management System">
+                 <padding>
+                     <Insets left="10.0" />
+                 </padding>
+             </Label>
+             <Label styleClass="app-name" stylesheets="@../../css/adminPage.css" text="By Chapter Champions">
+                 <padding>
+                     <Insets left="10.0" />
+                 </padding>
+             </Label>
+         </HBox>
+     </top>
+     <left>
+         <VBox styleClass="leftBox" stylesheets="@../../css/adminPage.css" BorderPane.alignment="CENTER">
+             <Button fx:id="addUsers" graphicTextGap="20.0" mnemonicParsing="false" onAction="#onAddUsers" onMouseEntered="#onMouseEnteredAddUsersButton" prefWidth="192.0" stylesheets="@../../css/adminPage.css" text="Add Users" textAlignment="RIGHT" wrapText="true" VBox.vgrow="ALWAYS">
+                 <font>
+                     <Font size="1.0" />
+                 </font>
+                 <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                 </VBox.margin>
+             </Button>
+             <Button fx:id="addBooks" graphicTextGap="40.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onAddBooks" onMouseEntered="#onMouseEnteredAddBooksButton" prefWidth="192.0" stylesheets="@../../css/adminPage.css" text="Add Books" textAlignment="RIGHT" wrapText="true" VBox.vgrow="ALWAYS">
+                 <font>
+                     <Font size="1.0" />
+                 </font>
+
+                 <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                 </VBox.margin>
+             </Button>
+             <Button fx:id="manageUsers" graphicTextGap="0.0" layoutX="15.0" layoutY="59.0" mnemonicParsing="false" onMouseEntered="#onMouseEnteredManageUserssButton" prefWidth="192.0" stylesheets="@../../css/adminPage.css" text="Manage Users" textAlignment="RIGHT" wrapText="true" VBox.vgrow="ALWAYS">
+                 <font>
+                     <Font size="1.0" />
+                 </font>
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+             </Button>
+             <Button fx:id="manageBooks" layoutX="10.0" layoutY="98.0" mnemonicParsing="false" onMouseEntered="#onMouseEnteredManageBooksButton" prefWidth="192.0" stylesheets="@../../css/adminPage.css" text="Manage Borrowed Books" textAlignment="RIGHT" wrapText="true" VBox.vgrow="ALWAYS">
+                 <font>
+                     <Font size="1.0" />
+                 </font>
+                 <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                 </VBox.margin>
+             </Button>
+         <Button fx:id="logout" graphicTextGap="60.0" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#onLogout" onMouseEntered="#onMouseEnteredLogout" prefWidth="192.0" stylesheets="@../../css/adminPage.css" text="Logout" textAlignment="RIGHT" wrapText="true" VBox.vgrow="ALWAYS">
+            <font>
+               <Font size="1.0" />
+            </font>
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+         </Button>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="3.0" top="3.0" />
+         </padding>
+         </VBox>
+     </left>
+ </BorderPane>
