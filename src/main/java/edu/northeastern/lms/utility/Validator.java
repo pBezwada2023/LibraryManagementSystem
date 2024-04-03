@@ -1,14 +1,14 @@
 package edu.northeastern.lms.utility;
 
 import edu.northeastern.lms.entity.Book;
-import edu.northeastern.lms.entity.Customer;
+import edu.northeastern.lms.entity.User;
 
 public class Validator {
 
     public static boolean isExistingUser(String userId) {
         return DataUtil.getAllUsers()
                 .stream()
-                .map(e -> (Customer) e)
+                .map(e -> (User) e)
                 .noneMatch(e -> e.getId().equals(userId)) && DataUtil.getUserDataSource().stream()
                 .noneMatch(e -> e.getId().equals(userId));
     }

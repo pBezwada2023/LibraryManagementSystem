@@ -74,7 +74,7 @@ public class MainApplication extends Application {
         Parent addUsersPage = FXMLLoader.load(requireNonNull(getClass().getResource("fxml/admin/addUsers.fxml"), "Cannot find addUsers.fxml"));
         Parent addBooksPage = FXMLLoader.load(requireNonNull(getClass().getResource("fxml/admin/addBooks.fxml"), "Cannot find addBooks.fxml"));
        // Parent userPage = FXMLLoader.load(requireNonNull(getClass().getResource("fxml/user/userPage.fxml"), "Cannot find UserPage.fxml"));
-       // Parent borrowBookPage = FXMLLoader.load(requireNonNull(getClass().getResource("fxml/user/borrowBook/borrowBook.fxml"), "Cannot find borrowBook.fxml"));
+        Parent checkOutBookPage = FXMLLoader.load(requireNonNull(getClass().getResource("fxml/user/borrowBook/checkoutBooks.fxml"), "Cannot find borrowBook.fxml"));
         //Parent listOfBorrowedBooksPage = FXMLLoader.load(requireNonNull(getClass().getResource("fxml/user/viewList/listOfBorrowedBooks.fxml"), "Cannot find listOfBorrowedBooks.fxml"));
         //Parent promptPage = FXMLLoader.load(requireNonNull(getClass().getResource("fxml/prompt.fxml"), "Cannot find prompt.fxml"));
 

@@ -45,6 +45,12 @@
     -fx-padding: 10px;
 }
 
+.radio-button {
+    -fx-font-size: 20;
+    -fx-text-fill: #2b2424;
+    -fx-padding: 40px;
+}
+
 .field-vbox {
     -fx-border-width: none;
 }

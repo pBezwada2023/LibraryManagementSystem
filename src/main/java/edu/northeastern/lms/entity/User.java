@@ -1,9 +1,12 @@
 package edu.northeastern.lms.entity;
 
+import java.io.Serial;
 import java.io.Serializable;
-import java.util.List;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class User implements Serializable {
+    @Serial
     private static final long serialVersionUID = 75782997496803L;
     private String id;
     private String firstName;
@@ -11,6 +14,7 @@ public class User implements Serializable {
     private long phoneNumber;
     private String emailId;
     private UserType userType;
+    private Set<Book> borrowedBooks;
 
     public User(String id, String fName, String lName, long phoneNumber, String emailId, UserType userType) {
         this.id = id;
@@ -19,6 +23,7 @@ public class User implements Serializable {
         this.phoneNumber = phoneNumber;
         this.emailId = emailId;
         this.userType = userType;
+        borrowedBooks = new LinkedHashSet<>();
     }
 
     public String getFirstName() {
@@ -68,4 +73,28 @@ public class User implements Serializable {
     public UserType getUserType() {
         return userType;
     }
+
+    public Set<Book> getBorrowedBooks() {
+        return borrowedBooks;
+    }
+
+    public void setBorrowedBooks(Set<Book> borrowedBooks) {
+        this.borrowedBooks = borrowedBooks;
+    }
+
+    public boolean checkOutBook(Book book) {
+        if(book == null || borrowedBooks.contains(book))
+            return false;
+        borrowedBooks.add(book);
+        return true;
+    }
+
+    public boolean checkInBook(Book book) {
+        if(book == null || !borrowedBooks.contains(book))
+            return false;
+        borrowedBooks.remove(book);
+        return true;
+    }
+
+
 }

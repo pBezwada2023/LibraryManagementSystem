@@ -16,8 +16,6 @@ import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
-
 
 public class AddBookController implements Initializable {
     private final String bookDataRepositoryPath = "src/main/data/books/";

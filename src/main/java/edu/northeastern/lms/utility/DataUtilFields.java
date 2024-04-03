@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Queue;
 
 class DataUtilFields {
-    static List<User> customerList = new ArrayList<>();
+    static List<User> userList = new ArrayList<>();
     static List<Book> booksList = new ArrayList<>();
     static List<Book> borowedBooksList = new ArrayList<>();
     static Queue<Button> activeButtons = new LinkedList<>();

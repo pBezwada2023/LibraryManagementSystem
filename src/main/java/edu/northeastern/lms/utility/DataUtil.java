@@ -1,18 +1,12 @@
 package edu.northeastern.lms.utility;
 
 import edu.northeastern.lms.entity.Book;
-import edu.northeastern.lms.entity.Category;
-import edu.northeastern.lms.entity.Customer;
 import edu.northeastern.lms.entity.User;
 import javafx.collections.ObservableList;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.SelectionMode;
-import javafx.scene.control.TableView;
 
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
-import java.util.Random;
 import java.util.stream.IntStream;
 
 public interface DataUtil {
@@ -31,8 +25,8 @@ public interface DataUtil {
         return DataUtilFields.booksDataSource;
     }
 
-    static List<? super Customer> getAllUsers() {
-        return DataUtilFields.customerList;
+    static List<User> getAllUsers() {
+        return DataUtilFields.userList;
     }
 
     static List<Book> getAllBooks() {

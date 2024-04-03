@@ -2,6 +2,7 @@ package edu.northeastern.lms.entity;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Book implements Serializable {
@@ -15,8 +16,8 @@ public class Book implements Serializable {
     private int publishedYear;
     private Category category;
     private boolean checkedOut;
-    private Customer checkedOutByUser;
-    private Date checkedOutDate;
+    private String checkedOutByUserId;
+    private LocalDate checkedOutDate;
 
     public Book(String id, String title, String isbn, double price, String author, int year, Category category) {
         this.id = id;
@@ -28,7 +29,7 @@ public class Book implements Serializable {
         this.category = category;
     }
 
-    public Book(String id, String title, String isbn, double price, String author, int year, Category category, boolean checkedOut, Customer checkedOutUser, Date checkedOutDate) {
+    public Book(String id, String title, String isbn, double price, String author, int year, Category category, boolean checkedOut, String checkedOutUserId, LocalDate checkedOutDate) {
         this.id = id;
         this.title = title;
         this.isbn = isbn;
@@ -37,7 +38,7 @@ public class Book implements Serializable {
         this.publishedYear = year;
         this.category = category;
         this.checkedOut = checkedOut;
-        this.checkedOutByUser = checkedOutUser;
+        this.checkedOutByUserId = checkedOutUserId;
         this.checkedOutDate = checkedOutDate;
     }
 
@@ -105,19 +106,19 @@ public class Book implements Serializable {
         this.checkedOut = checkedOut;
     }
 
-    public Customer getCheckedOutByUser() {
-        return checkedOutByUser;
+    public String getCheckedOutByUserId() {
+        return checkedOutByUserId;
     }
 
-    public void setCheckedOutByUser(Customer customer) {
-        this.checkedOutByUser = customer;
+    public void setCheckedOutByUserId(String  userId) {
+        this.checkedOutByUserId = userId;
     }
 
-    public Date getCheckedOutDate() {
+    public LocalDate getCheckedOutDate() {
         return checkedOutDate;
     }
 
-    public void setCheckedOutDate(Date checkedOutDate) {
+    public void setCheckedOutDate(LocalDate checkedOutDate) {
         this.checkedOutDate = checkedOutDate;
     }
 
